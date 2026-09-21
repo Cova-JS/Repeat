@@ -1,0 +1,81 @@
+{
+  "name": "scat",
+  "version": "0.1.1",
+  "components": [
+    {
+      "name": "Button",
+      "category": "Misc",
+      "public": true,
+      "description": "An interactive control that triggers an immediate action, submission, or navigation.",
+      "whenToUse": [
+        "Confirming or submitting a form",
+        "Triggering a primary action on a screen",
+        "Launching a dialog, drawer or destructive flow",
+        "Grouping a decision pair (Cancel / Confirm)"
+      ],
+      "whenNotToUse": [
+        "For in-page navigation to another URL — use Link",
+        "For toggling state on/off — use Switch or a selectable control",
+        "When the visual is just decoration with no action"
+      ],
+      "props": [
+        {
+          "name": "state",
+          "kind": "variant",
+          "values": [
+            "default",
+            "hover",
+            "focus",
+            "disabled",
+            "loading"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "variant",
+          "kind": "variant",
+          "values": [
+            "primary",
+            "secondary",
+            "ghost",
+            "danger"
+          ],
+          "default": "primary"
+        }
+      ],
+      "tokensUsed": [
+        "radius.md",
+        "semanticColors.border.default",
+        "semanticColors.border.disabled",
+        "semanticColors.border.focus",
+        "semanticColors.border.strong",
+        "semanticColors.content.accent",
+        "semanticColors.content.default",
+        "semanticColors.content.disabled",
+        "semanticColors.content.on-accent",
+        "semanticColors.content.on-accent-disabled",
+        "semanticColors.content.on-error",
+        "semanticColors.surface.accent",
+        "semanticColors.surface.accent-disabled",
+        "semanticColors.surface.accent-hover",
+        "semanticColors.surface.accent-pressed",
+        "semanticColors.surface.default",
+        "semanticColors.surface.default-disabled",
+        "semanticColors.surface.default-hover",
+        "semanticColors.surface.default-pressed",
+        "semanticColors.surface.error",
+        "semanticColors.surface.error-disabled",
+        "semanticColors.surface.error-hover",
+        "semanticColors.surface.error-pressed",
+        "semanticColors.surface.subtle",
+        "semanticColors.surface.subtle-hover",
+        "spacing.lg",
+        "spacing.md",
+        "spacing.sm",
+        "typography.roles.body.steps.md"
+      ],
+      "file": "components/Button.tsx",
+      "doc": "components/Button.md"
+    }
+  ]
+}
